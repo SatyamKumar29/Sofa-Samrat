@@ -14,6 +14,10 @@ body {
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Presets */
 
 :root{
@@ -37,6 +41,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 100;
+    backdrop-filter: blur(10px);
 }
 
 .logo-main{
@@ -401,6 +406,7 @@ nav{
 
 .product{
     padding: 80px 8%;
+    background: var(--warm-white);
     
 }
 
@@ -481,4 +487,202 @@ nav{
     text-transform: uppercase;
     border-bottom: 2px solid var(--gold);
     padding-bottom: 2px;
+}
+
+.repair{
+    padding: 80px 8%;
+    background: var(--sand);
+}
+
+.repair-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.repair-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    color: var(--dark-brown);
+    margin-bottom: 20px;
+}
+
+.repair-content p{
+    color: var(--light-brown);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.repair-steps{
+    list-style: none;
+}
+
+.repair-steps li{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.step-dot{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--walnut);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+}
+
+.step-text strong {
+    display: block;
+    color: var(--dark-brown);
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+}
+
+.step-text span {
+    color: var(--light-brown);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.repair-visual {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.enquire{
+    padding: 80px 8%;
+    background: var(--walnut);
+}
+
+
+.enquire .section-heading{
+    color: var(--warm-white)!important;
+} 
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-left p{
+    color: rgba(255, 253, 248, 0.7);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.cinfo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.cinfo-icon{
+    background: rgba(255, 255, 255, 0.1);
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.cinfo span {
+    color: var(--sand);
+    font-size: 0.95rem;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.fgroup {
+    margin-bottom: 18px;
+}
+
+.fgroup label {
+    display: block;
+    color: var(--sand);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+::placeholder {
+    color: rgba(255, 253, 248, 0.449);
+}
+
+.fgroup input, .fgroup select, .fgroup textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: var(--warm-white);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus {
+    border-color: var(--gold);
+}
+
+.fgroup select option{
+    background : var(--walnut);
+}
+
+.btn-contact {
+    width: 100%;
+    background: var(--gold);
+    color: var(--dark-brown);
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.2s;
+}
+
+.btn-contact:hover {
+    background: #dbb85a;
+}
+
+.btn-contact:hover {
+    background: #dbb85a;
+}
+
+footer{
+    background: var(--dark-brown);
+    text-align: center;
+    padding: 28px;
+}
+
+footer p {
+    color: rgba(255, 253, 248, 0.4);
+    font-size: 0.82rem;
 }
