@@ -6,9 +6,10 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
-    background: var(--warm-white);
+    background: var(--beige);
     color: var(--dark-brown);
     font-family: 'Nunito', sans-serif;
     
@@ -24,6 +25,9 @@ body {
     --gold: #C9A84C;
     --light-brown: #9B6A3C;
     --green: #5C7A50;
+    --beige: #F7F2EA;
+     --border: rgba(107,66,38,0.13);
+    --shadow: 0 4px 24px rgba(61,32,16,0.08);
 }
 
 /* nav bar */
@@ -92,3 +96,4 @@ nav{
     background: var(--walnut) !important;
     color: white !important;
 }
+
