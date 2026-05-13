@@ -22,5 +22,15 @@ function sendWhatsApp(){
 
     window.open('https://wa.me/919876543210?text=' + encodeURIComponent(text), '_blank')
 
-
 }
+
+  // Scroll-triggered fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
