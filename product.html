@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofa Samrat</title>
+    <title>Products - Sofa Samrat</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="product.css">
 </head>
 <body>
+
     <nav>
     <div class="logo">
         <div class="logo-main">Sofa Samrat</div>
@@ -24,9 +25,61 @@
 </ul>
    </nav>
 
-   <section>
-    
+   <section class="hero">
+    <div class="hero-inner">
+        <div class="hero-eyebrow">Our Collection</div>
+        <h1>Furniture Built for Real Homes</h1>
+        <p>Every sofa, couch and bed is handcrafted in our Muzaffarpur workshop — built to your size, your color, your style. Browse our collection below.</p>
+    </div>
    </section>
 
+   <section class="cat-nav">
+    <a href="#sofas" class="cat-link" onclick="setActive(this)">🛋️ Sofas</a>
+    <a href="#couches" class="cat-link" onclick="setActive(this)">🪑 Couches</a>
+    <a href="#beds" class="cat-link" onclick="setActive(this)">🛏️ Beds</a>
+   </section>
+
+   <section class="product-page">
+    <div class="trust-strip fade-up">
+    <div class="trust-item">
+        <div class="trust-icon">🏠</div>
+        <div class="trust-text">
+            <strong>100% In-House Made</strong>
+            <span>No outsourcing, ever</span>
+        </div>
+    </div>
+    <div class="trust-item">
+        <div class="trust-icon">🚚</div>
+        <div class="trust-text">
+            <strong>Free Delivery</strong>
+            <span>Across Muzaffarpur & nearby areas</span>
+        </div>
+    </div>
+    <div class="trust-item">
+        <div class="trust-icon">🔄</div>
+        <div class="trust-text">
+            <strong>7-Day Returns</strong>
+            <span>No questions asked</span>
+        </div>
+    </div>
+    <div class="trust-item">
+        <div class="trust-icon">📐</div>
+        <div class="trust-text">
+            <strong>Custom Sizes</strong>
+            <span>Built to fit your space</span>
+        </div>
+    </div>
+    <div class="trust-item">
+        <div class="trust-icon">⭐</div>
+        <div class="trust-text">
+            <strong>500+ Happy Homes</strong>
+            <span>Trusted since 2012</span>
+        </div>
+    </div>
+    </div>
+   </section>
+
+
+   <script src="script.js"></script>
 </body>
 </html>
