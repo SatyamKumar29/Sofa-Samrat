@@ -239,3 +239,70 @@ nav{
     font-size: 0.78rem;
     color: var(--light-brown);
 }
+
+.cat-section {
+    margin-bottom: 80px;
+    scroll-margin-top: 130px;
+}
+
+.cat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cat-eyebrow {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+    letter-spacing: 3px;
+    font-weight: 700;;
+}
+
+.cat-title {
+    font-family: 'Cormorant Garamond';
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    color: var(--dark-brown);
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.cat-desc {
+    font-size: 0.88rem;
+    color: var(--light-brown);
+    line-height: 1.6;
+    margin-top: 6px;
+    max-width: 480px;
+    font-weight: 300;
+}
+
+.cat-count {
+    font-size: 0.78rem;
+    color: var(--light-brown);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+    gap: 22px;
+}
+
+.prod-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s,box-shadow 0.3;
+}
+
