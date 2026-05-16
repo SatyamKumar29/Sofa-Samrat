@@ -26,6 +26,7 @@ body {
     --light-brown: #9B6A3C;
     --green: #5C7A50;
     --beige: #F7F2EA;
+    --red: #B03A2E;
      --border: rgba(107,66,38,0.13);
     --shadow: 0 4px 24px rgba(61,32,16,0.08);
 }
@@ -290,7 +291,7 @@ nav{
     text-transform: uppercase;
 }
 
-.product-grid {
+.prod-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
     gap: 22px;
@@ -305,4 +306,107 @@ nav{
     position: relative;
     transition: transform 0.3s,box-shadow 0.3;
 }
+
+.badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 3;
+    background: var(--walnut);
+    color: var(--sand);
+    padding: 4px 11px;
+    border-radius: 3px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.badge.new{
+    background: var(--green);
+}
+
+.badge.sale{
+    background: var(--red);
+}
+
+.wishlist {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 3;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: var(--shadow);
+}
+
+.prod-img {
+    background: beige;    
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s;
+}
+
+.prod-body{
+    padding: 20px 20px 16px;
+}
+
+.prod-category-tag {
+    font-size: 0.68rem;
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.prod-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.22rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+.prod-desc {
+    font-size: 0.82rem;
+    color: var(--light-brown);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.prod-colors {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.color-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
 
