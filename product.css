@@ -365,7 +365,7 @@ nav{
     padding: 20px 20px 16px;
 }
 
-.prod-category-tag {
+.prod-cat-tag {
     font-size: 0.68rem;
     color: var(--gold);
     font-weight: 700;
@@ -408,5 +408,47 @@ nav{
     transition: transform 0.2s;
 }
 
+.prod-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-top: 1px solid var(--border);
+}
+
+.prod-price .amount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.prod-price .original {
+    font-size: 0.82rem;
+    color: #aaa;
+    text-decoration: line-through;
+    margin-left: 6px;
+}
 
 
+.prod-price .saving {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--green);
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.prod-btn {
+    background: var(--walnut);
+    color: var(--sand);
+    border: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    white-space: nowrap;
+}
