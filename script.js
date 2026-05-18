@@ -34,3 +34,16 @@ function sendWhatsApp(){
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+
+  const sections = ['sofas','couches','beds','repair'];
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 160) current = id;
+    });
+    document.querySelectorAll('.cat-link').forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+    });
+  });

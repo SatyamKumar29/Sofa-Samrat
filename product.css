@@ -452,3 +452,19 @@ nav{
     transition: background 0.2s, transform 0.2s;
     white-space: nowrap;
 }
+
+footer{
+    background: var(--dark-brown);
+    text-align: center;
+    padding: 28px;
+}
+
+footer p {
+    color: rgba(255, 253, 248, 0.4);
+    font-size: 0.82rem;
+}
+
+.cat-link.active {
+    color: var(--walnut);
+    border-bottom-color: var(--gold);
+}
